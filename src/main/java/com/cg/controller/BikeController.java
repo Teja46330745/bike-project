@@ -24,8 +24,8 @@ public class BikeController {
 			return service.getbikeById(id);
 		}
 
-	@PostMapping("/bike")
-	private int saveOrUpdate(@RequestBody Bike bike) {
+	@PostMapping("/add")
+	private int save(@RequestBody Bike bike) {
 
 		service.saveOrUpdate(bike);
 		return bike.getId();
