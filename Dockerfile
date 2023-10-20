@@ -1,7 +1,5 @@
-FROM maven:3.1.4-openjdk-17
-
-WORKDIR /46330745BikeProject
-COPY . .
-RUN mvn clean install
-
-CMD mvn spring-boot:run
+FROM openjdk:17-jdk-slim
+ARG JAR_FILE=target/Bike-project.jar
+WORKDIR .
+COPY $(JAR_FILE) app.jar
+ENTRYPOINT ["java","-jar","app.jar"]

@@ -13,6 +13,9 @@ public class Bike {
 	private int id;
 	private String name;
 	private double milage;
+	
+	public Bike() {}
+	
 	public Bike(int id, String name, double milage) {
 		super();
 		this.id = id;

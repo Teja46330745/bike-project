@@ -11,25 +11,19 @@ import com.cg.repository.BikeRepository;
 
 @Service
 public class BikeService {
-	
 
-	
-		@Autowired
-		BikeRepository bikeRepository;
-		public void saveOrUpdate(Bike bike) {
-			bikeRepository.save(bike);
-		}
+	@Autowired
+	BikeRepository bikeRepository;
 
-
-		public Bike getbikeById(int id) {
-			return bikeRepository.findById(id).get();
-		} 
-		public List<Bike> getAllBike()   
-		{  
-		List<Bike> bike = new ArrayList<Bike>();  
-		bikeRepository.findAll().forEach(bike1 -> bike.add(bike1));  
-		return bike;  
-		}  
+	public void saveOrUpdate(Bike bike) {
+		bikeRepository.save(bike);
 	}
 
+	public Bike getbikeById(int id) {
+		return bikeRepository.findById(id).get();
+	}
 
+	public List<Bike> getAllBike() {
+		return bikeRepository.findAll();
+	}
+}
