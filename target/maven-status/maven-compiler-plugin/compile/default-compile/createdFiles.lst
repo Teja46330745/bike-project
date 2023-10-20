@@ -1,0 +1,6 @@
+com\cg\service\BikeService.class
+com\cg\Application.class
+com\cg\repository\BikeRepository.class
+com\cg\controller\BikeController.class
+com\cg\dao\BikeDaoInterface.class
+com\cg\entity\Bike.class
