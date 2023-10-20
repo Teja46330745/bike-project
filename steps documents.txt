@@ -1,0 +1,21 @@
+Docker push steps--
+
+1. created a spring boot project with dependencies(Spring web, spring data jpa, postgres).
+2. followed package heirarchy.
+3.created github repository.
+4. pushed the project to the repository using gitbash and commit message as "Initial commit".
+5. added entity class and pushed to github repository with commit message as "Entity class commit".
+6. added DAO class and pushed to github repository with commit message as "dao class commit".
+7. added repository class and pushed to github repository with commit message as "repository class commit".
+8. added service class and pushed to github repository with commit message as "Service class commit".
+9. added Controller class and pushed to github repository with commit message as "Controller class commit".
+10.tested the application in postman.
+11.table is also created in database.
+12.created dockerfile 
+13.created docker-compose.yml file 
+14.added plugins to the pom.xml file and run the application as maven build
+15.created docker repository with public access
+16.taken git pull of github repository in docker playground
+17.created docker image using docker compose up -d command
+18.used docker tag command.
+19.pushed the image to docker repository using docker push commamnd.
