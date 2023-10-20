@@ -5,7 +5,6 @@ import com.cg.entity.Bike;
 
 public interface BikeRepository extends JpaRepository<Bike,Integer>{
 
-	 
 	}
 
 
